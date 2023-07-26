@@ -1,27 +1,9 @@
 const request = require('supertest');
-const app = require('./routes');
+const app = require('./app');
 // error:thrown: "Exceeded timeout of 5000 ms for a test.
-
-// afterEach(() => {
-//     jest.useRealTimers();
-// });
-// jest.useRealTimers();
+// -> solve: module.exports之前接錯，接到router
 
 describe('GET /', () => {
-    // it(
-    //     'return json shows status ok',
-    //     () =>
-    //         request(app)
-    //             .get('/')
-    //             .set('Accept', 'application/json')
-    //             .expect('Content-Type', /json/)
-    //             .expect(200)
-    //             .then((response) => {
-    //                 assert(response.body.status, 'ok');
-    //             }),
-    //     1000 * 10
-    // );
-
     it('responds with json', async function () {
         const response = await request(app)
             .get('/')
