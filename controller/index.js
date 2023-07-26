@@ -12,15 +12,15 @@ module.exports = async (req, res, next) => {
         if (!source)
             return res
                 .status(400)
-                .json({ msg: 'error', data: 'source required' });
+                .json({ msg: 'error', data: 'source required.' });
         if (!target)
             return res
                 .status(400)
-                .json({ msg: 'error', data: 'target required' });
+                .json({ msg: 'error', data: 'target required.' });
         if (!amount)
             return res
                 .status(400)
-                .json({ msg: 'error', data: 'amount required' });
+                .json({ msg: 'error', data: 'amount required.' });
         // 判斷source在不在
 
         const sourceFormat = isSourceExistFunc(source);
