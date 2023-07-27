@@ -21,8 +21,8 @@ module.exports = async (req, res, next) => {
             return res
                 .status(400)
                 .json({ msg: 'error', data: 'amount required.' });
-        // 判斷source在不在
 
+        // 判斷source在不在
         const sourceFormat = isSourceExistFunc(source);
         const isSourceExist = sourceFormat.status;
         if (!isSourceExist)
