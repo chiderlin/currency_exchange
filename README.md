@@ -1,5 +1,9 @@
 ## Currency Exchange APIs
 
+nodejs 版本：js folder 裡面
+
+typescript 版本: types folder 裡面
+
 js 和 typescript 啟動方式相同，如下：
 
 執行 unittest：`npm test`
