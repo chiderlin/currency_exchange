@@ -30,3 +30,6 @@ Api Design
     "data": "source currency does not exist."
 }
 ```
+
+Api 流程圖
+![logic-process](./github-png/api-logic.jpg)
