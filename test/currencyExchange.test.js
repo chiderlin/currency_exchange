@@ -1,7 +1,7 @@
 const {
     isSourceExistFunc,
     isTargetExistFunc,
-    amountFomatFunc,
+    amountFormatFunc,
     currencyExchangeFunc,
     formatFinalTotal,
 } = require('../controller/currencyExchange');
@@ -70,17 +70,17 @@ describe('test isTargetExistFunc function', () => {
 describe('test amountFormatFunc function', () => {
     it('test amount normal insert', () => {
         const amount = '$123,456';
-        expect(amountFomatFunc(amount)).toBe(123456);
+        expect(amountFormatFunc(amount)).toBe(123456);
     });
 
     it('test float insert', () => {
         const amount = '$123,456.1233333';
-        expect(amountFomatFunc(amount)).toBe(123456.1233333);
+        expect(amountFormatFunc(amount)).toBe(123456.1233333);
     });
 
     it('test random insert', () => {
         const amount = '$rrr1t2^3';
-        expect(amountFomatFunc(amount)).toBe(123);
+        expect(amountFormatFunc(amount)).toBe(123);
     });
 });
 
