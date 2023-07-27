@@ -11,7 +11,7 @@ Api Design
 
 使用範例：
 
-> ?source=USD&target=JPY&amount=$1,525`
+> ?source=USD&target=JPY&amount=$1,525
 
 輸出範例：
 
