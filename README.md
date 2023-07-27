@@ -18,7 +18,7 @@ Api Design
 ```json
 {
     "msg": "success",
-    "amount": "$170496.53"
+    "amount": "$170,496.53"
 }
 ```
 
