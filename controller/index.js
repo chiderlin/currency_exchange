@@ -1,7 +1,7 @@
 const {
     formatFinalTotal,
     currencyExchangeFunc,
-    amountFomatFunc,
+    amountFormatFunc,
     isSourceExistFunc,
     isTargetExistFunc,
 } = require('./currencyExchange');
@@ -40,7 +40,7 @@ module.exports = async (req, res, next) => {
                 msg: 'error',
                 data: 'target currency does not exist.',
             });
-        const amountFormat = amountFomatFunc(amount);
+        const amountFormat = amountFormatFunc(amount);
         const rate = targetFormat.rate;
         const currencyExchange = currencyExchangeFunc(amountFormat, rate);
         const totalString = formatFinalTotal(currencyExchange);

@@ -4,7 +4,7 @@ const {
     amountFomatFunc,
     currencyExchangeFunc,
     formatFinalTotal,
-} = require('./controller/currencyExchange');
+} = require('../controller/currencyExchange');
 const rate = {
     currencies: {
         TWD: {

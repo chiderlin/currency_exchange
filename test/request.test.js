@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./app');
+const app = require('../app');
 // error:thrown: "Exceeded timeout of 5000 ms for a test.
 // -> solve: module.exports之前接錯，接到router
 

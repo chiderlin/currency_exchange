@@ -35,7 +35,7 @@ function currencyExchangeFunc(amount, rate) {
     return round;
 }
 
-function amountFomatFunc(amount) {
+function amountFormatFunc(amount) {
     // 貨幣轉換, 1.錢字號跟千分位表示法要做format再轉
     const regex = /[^0-9\.]+/g;
     const amountFormat = amount.replace(regex, '');
@@ -69,7 +69,7 @@ function isTargetExistFunc(src, target) {
 module.exports = {
     formatFinalTotal,
     currencyExchangeFunc,
-    amountFomatFunc,
+    amountFormatFunc,
     isSourceExistFunc,
     isTargetExistFunc,
 };
