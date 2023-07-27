@@ -1,5 +1,7 @@
 ## Currency Exchange APIs
 
+js 和 typescript 啟動方式相同，如下：
+
 執行 unittest：`npm test`
 
 啟動程式：`npm run dev`
