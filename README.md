@@ -1,7 +1,5 @@
 ## Currency Exchange APIs
 
-fff
-
 nodejs 版本：js folder 裡面
 
 typescript 版本: types folder 裡面
